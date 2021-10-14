@@ -3,41 +3,18 @@
 //COMPONENT
 
 //EXPORT
-import { Navbar, Container,  } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 const NavBar = () =>{
     return(
         <>
         <Navbar bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            </Container>
-        </Navbar>
-        <br />
-        <Navbar bg="primary" variant="dark">
-            <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-            <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            </Container>
-        </Navbar>
-
-        <br />
-        <Navbar bg="light" variant="light">
-            <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-            <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#home">Inicio</Nav.Link>
+            <Nav.Link href="#">Ofertas</Nav.Link>
+            <Nav.Link href="#">Tendencias</Nav.Link>
             </Nav>
             </Container>
         </Navbar>
@@ -46,4 +23,4 @@ const NavBar = () =>{
 }
 
 
-export default NavBar
+export default NavBar;
