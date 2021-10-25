@@ -2,7 +2,7 @@ import NavBar from './components/NavBar.js'
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemListContainer } from './components/ItemListContainer'
-// import './AppStyle.css'   ((No me toma el CSS ))
+import './AppStyle.css'
 
 
 

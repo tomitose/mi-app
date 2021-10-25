@@ -1,6 +1,6 @@
 
 export function CartWidget () {
     return(
-        <img src="../../public/cartlogo.png" alt="Cart" />
+        <img src="./img/cartlogo.png" alt="Cart" className="cartLogo"/>
     )
 }
