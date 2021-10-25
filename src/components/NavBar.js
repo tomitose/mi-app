@@ -4,16 +4,11 @@
 
 //EXPORT
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { CartWidget } from "./CartWidget";
 
 
 
-// export function Logo () {
-//     return
-//     <img src='../public/cartlogo.png' alt='Logo'></img>
-// } 
-
-const NavBar = (props) =>{
-    const {nombre,apellido} = props
+const NavBar = () =>{
     return(
         <>
         <Navbar bg="dark" variant="dark">
@@ -23,11 +18,14 @@ const NavBar = (props) =>{
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#">Ofertas</Nav.Link>
             <Nav.Link href="#">Tendencias</Nav.Link>
+            
+            <CartWidget/>
+            
             </Nav>
             </Container>
+
         </Navbar>
-        <div>{nombre}</div>
-        <div>{apellido}</div>
+
         </>
     )
 }
