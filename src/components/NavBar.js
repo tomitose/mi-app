@@ -5,7 +5,15 @@
 //EXPORT
 import { Navbar, Container, Nav } from "react-bootstrap";
 
-const NavBar = () =>{
+
+
+// export function Logo () {
+//     return
+//     <img src='../public/cartlogo.png' alt='Logo'></img>
+// } 
+
+const NavBar = (props) =>{
+    const {nombre,apellido} = props
     return(
         <>
         <Navbar bg="dark" variant="dark">
@@ -18,6 +26,8 @@ const NavBar = () =>{
             </Nav>
             </Container>
         </Navbar>
+        <div>{nombre}</div>
+        <div>{apellido}</div>
         </>
     )
 }
