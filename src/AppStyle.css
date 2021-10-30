@@ -1,3 +1,18 @@
+/* NavBar */
+.NavBar {
+    background-color: #9575CD;
+}
+
+.Logo{
+    width: 35px;
+    margin-right: 10px;
+}
+
 .CartLogo{
     width: 35px;
+}
+
+.Titulo{
+    margin-top: 55px;
+    text-align: center;
 }

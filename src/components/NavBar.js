@@ -3,6 +3,8 @@
 //COMPONENT
 
 //EXPORT
+
+
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { CartWidget } from "./CartWidget";
 
@@ -11,17 +13,25 @@ import { CartWidget } from "./CartWidget";
 const NavBar = () =>{
     return(
         <>
-        <Navbar bg="dark" variant="dark">
+        <Navbar className="NavBar" fixed="top" expand="sm" collapseOnSelect>
             <Container>
-            <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
-            <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#">Ofertas</Nav.Link>
-            <Nav.Link href="#">Tendencias</Nav.Link>
-            
-            <CartWidget/>
-            
-            </Nav>
+            <Navbar.Brand href="#home">
+                <img src="./img/cart.png" className="Logo" alt="CartEcommerce" />
+                E-commerce
+            </Navbar.Brand>
+
+            <Navbar.Toggle/>
+
+            <Navbar.Collapse>
+                <Nav className="me-auto">
+                    <Nav.Link href="#home">Inicio</Nav.Link>
+                    <Nav.Link href="#">Ofertas</Nav.Link>
+                    <Nav.Link href="#">Productos</Nav.Link>                               
+                </Nav>
+
+                    <CartWidget/> 
+                    
+            </Navbar.Collapse>
             </Container>
 
         </Navbar>

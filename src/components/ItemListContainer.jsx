@@ -1,7 +1,7 @@
 
-export function ItemListContainer (greeting) {
+export function ItemListContainer ({title}) {
     
     return (
-        greeting= 'Bienvenido al Ecommerce'
+        <h1 className='Titulo'>{title}</h1>
     )
 }
