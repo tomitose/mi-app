@@ -22,7 +22,9 @@ export function ItemCount  ({stock,initial,onAdd}) {
                 <FormControl type="number" value={count} style={{width:"50px"}}/>
                 <Button onClick={aumentarClick}>+</Button>
             </InputGroup>
+            <div className="ContenedorAdd">
                 <Button className="AgregarCarrito" onClick={()=> onAdd (count)}>Agregar a Carrito</Button>
+            </div>
         </div>
     );
 
