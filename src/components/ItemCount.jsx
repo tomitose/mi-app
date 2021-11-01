@@ -19,7 +19,7 @@ export function ItemCount  ({stock,initial,onAdd}) {
         <div className="ItemCompra">
             <InputGroup className="InputGroup">
                 <Button onClick={restarClick}>-</Button>
-                <FormControl type="number" value={count} style={{width:"50px"}}/>
+                <FormControl type="number" value={count} style={{width:"80px",textAlign:"center"}}/>
                 <Button onClick={aumentarClick}>+</Button>
             </InputGroup>
             <div className="ContenedorAdd">

@@ -1,5 +1,5 @@
 
-import React, {useEffect} from 'react';
+/*import React, {useEffect} from 'react';*/
 import NavBar from './components/NavBar.js'
 import { ItemListContainer } from './components/ItemListContainer'
 import './AppStyle.css'
@@ -11,9 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  useEffect (() => { // Es una funcion que se ejecuta de manera secundaria (NO ESTARÍA FUNCIONANDO BIEN ESTE ALERT, NO SE PINTA ANTES EL RETURN)
+/*   useEffect (() => { // Es una funcion que se ejecuta de manera secundaria (NO ESTARÍA FUNCIONANDO BIEN ESTE ALERT, NO SE PINTA ANTES EL RETURN)
     alert ('Se ejecuta al final del renderizado')
-  },[])
+  },[]) */
 
 
   return (
