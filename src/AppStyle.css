@@ -12,7 +12,18 @@
     width: 35px;
 }
 
+
+
+
+/*ItemListContainer*/
+
 .Titulo{
     margin-top: 55px;
     text-align: center;
 }
+
+
+.input-group>.form-control, .input-group>.form-select{
+    flex: initial !important;
+}
+

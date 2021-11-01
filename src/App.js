@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  useEffect (() => { // Es una funcion que se ejecuta de manera secundaria
+  useEffect (() => { // Es una funcion que se ejecuta de manera secundaria (NO ESTARÍA FUNCIONANDO BIEN ESTE ALERT, NO SE PINTA ANTES EL RETURN)
     alert ('Se ejecuta al final del renderizado')
   },[])
 
