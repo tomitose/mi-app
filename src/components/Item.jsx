@@ -42,6 +42,9 @@ export const Item = () => {
                     </div>
                     <div className="card-footer">
                         <h5> Precio : ${producto.price}</h5>
+                        <button className="btn btn-outline-primary">
+                            Detalle del producto
+                        </button>
                     </div> 
 
                 </div>
