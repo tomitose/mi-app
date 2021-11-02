@@ -1,8 +1,12 @@
+import { Item } from "./Item"
 
 
 const ItemList = () => {
     return(
-        <h3>Soy ItemList</h3>
+        <div>
+            <h3>Lista de Productos</h3>
+            <Item/>
+        </div>
     )
 }
 
