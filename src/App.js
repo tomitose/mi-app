@@ -1,7 +1,8 @@
 
 /*import React, {useEffect} from 'react';*/
 import NavBar from './components/NavBar.js'
-import { ItemListContainer } from './components/ItemListContainer'
+import { ItemListContainer } from './components/container/ItemListContainer'
+import ItemDetailContainer from './components/container/ItemDetailContainer/ItemDetailContainer.jsx';
 import './AppStyle.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,6 +22,7 @@ function App() {
       <header className="App-header">
         <NavBar/>
         <ItemListContainer title='Bienvenido al Ecommerce'/>
+        <ItemDetailContainer/>
       </header>
     </div>
   );

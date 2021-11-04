@@ -1,39 +1,10 @@
-import { useState } from "react";
-
+import React from "react" 
+ 
+   
+const Item = ({producto}) => {
     
-
-
-
-export const Item = () => {
-
-    const productos = [
-        { id:1, foto:<img src="./img/sneakers.jpg" className="Zapas" alt="Cart" />,title:"Nike Jordan",price:5000},
-        { id:2, foto:<img src="./img/sneakers2.jpg" className="Zapas2" alt="Cart" />,title:"Nike Air",price:6000},
-        { id:3, foto:<img src="./img/sneakers3.jpg" className="Zapas3" alt="Cart" />,title:"Nike 3",price:6500}
- ]
-
-
-    const getProductos = new Promise((resolve,reject)=> {
-            setTimeout(() => {
-                resolve(productos);
-            }, 2000);
-        })
-
-    const[product,setProduct] = useState([])
-
-
-    getProductos 
-    .then (resolve => {
-            setProduct(resolve)
-    },[])
-
-    .catch (error => console.log(error))
-
-
-        return (
-            <div>
-                {
-                product.map(producto => <div key={producto.id} className="card w-50 mt-5">
+    return (
+            <div className="card w-50 mt-5">
                     <div className="card-header">
                         {producto.title}
                     </div>
@@ -47,14 +18,9 @@ export const Item = () => {
                         </button>
                     </div> 
 
-                    </div>
-                            
-                )
-
-                }
-            </div>
-
+             </div>
 
         ) 
 }
 
+export default Item
